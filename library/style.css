@@ -1,0 +1,154 @@
+/** @format */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f4f6f9;
+	color: #333;
+}
+
+#container {
+	width: 90%;
+	margin: 30px auto;
+	padding: 30px;
+	background-color: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+	text-align: center;
+	color: #2c3e50;
+}
+
+#addBookForm {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+	background-color: #f8f9fa;
+	padding: 25px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#addBookForm input[type="text"],
+#addBookForm input[type="number"] {
+	width: 95%;
+	padding: 12px 15px;
+	border: 1px solid #dee2e6;
+	border-radius: 6px;
+	font-size: 16px;
+	transition: border-color 0.3s ease;
+}
+
+#addBookForm input[type="text"]:focus,
+#addBookForm input[type="number"]:focus {
+	outline: none;
+	border-color: #007bff;
+	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+#addBookForm label {
+	display: flex;
+	align-items: center;
+	grid-column: span 2;
+	font-size: 16px;
+	color: #495057;
+}
+
+#addBookForm label input[type="checkbox"] {
+	margin-right: 10px;
+	transform: scale(1.2);
+}
+
+#addBookForm button {
+	grid-column: span 2;
+	padding: 12px 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.1s;
+}
+
+#addBookForm button:hover {
+	background-color: #0056b3;
+}
+
+#addBookForm button:active {
+	transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+	#addBookForm {
+		grid-template-columns: 1fr;
+	}
+
+	#addBookForm label,
+	#addBookForm button {
+		grid-column: span 1;
+	}
+}
+
+input,
+button,
+label {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+tr:hover {
+	background-color: #f1f1f1;
+}
+
+.read {
+	background-color: #28a745;
+	color: white;
+}
+
+.unread {
+	background-color: #dc3545;
+	color: white;
+}
+
+#showUnreadBooks {
+	margin-bottom: 10px;
+	background-color: #28a745;
+}

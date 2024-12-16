@@ -1,0 +1,47 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Китепкана</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h1>Менин китепканам</h1>
+
+			<form id="addBookForm">
+				<input type="text" id="title" placeholder="Китептин аталышы" required />
+				<input type="text" id="author" placeholder="Автор" required />
+				<input type="number" id="pages" placeholder="Беттер" required />
+				<input type="number" id="year" placeholder="Чыгарылган жылы" required />
+				<label>
+					<input type="checkbox" id="isRead" />
+					Окулду
+				</label>
+				<button type="submit">Кошуу</button>
+			</form>
+
+			<h2>Китептерим</h2>
+			<button id="showUnreadBooks">
+				Тек гана окулбаган китептерди көрсөтүү
+			</button>
+			<table id="bookTable">
+				<thead>
+					<tr>
+						<th>Аты</th>
+						<th>Автор</th>
+						<th>Беттер</th>
+						<th>Чыгарылган жылы</th>
+						<th>Статус</th>
+						<th>Амалдар</th>
+					</tr>
+				</thead>
+				<tbody id="bookList"></tbody>
+			</table>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
